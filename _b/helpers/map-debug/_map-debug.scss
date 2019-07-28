@@ -1,0 +1,24 @@
+@charset 'UTF-8';
+
+/*
+@author: Hugo Giraudel
+@link: https://www.sitepoint.com/debugging-sass-maps/
+@license: MIT
+@license-file: LICENSE
+*/
+
+@mixin _b__map-debug( $map ) {
+	@at-root {
+		@_b__map-debug {
+			__toString__: inspect( $map );
+			__length__: length( $map );
+			__depth__: depth( $map );
+			__keys__: map-keys( $map );
+			__properties__ {
+				@each $key, $value in $map {
+					#{'(' + type-of( $value ) + ') ' + $key}: inspect( $value );
+				}
+			}
+		}
+	}
+}

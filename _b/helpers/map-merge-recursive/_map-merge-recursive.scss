@@ -1,0 +1,32 @@
+@charset 'UTF-8';
+
+/*
+@author: Zsolt Pentz
+@link: https://github.com/pentzzsolt/sass-recursive-map-merge/blob/master/_recursive-map-merge.scss
+@license: MIT
+@license-file: LICENSE
+*/
+
+@function _b__map-merge-recursive( $map1, $map2 ) {
+	@if ( ( type-of( $map1 ) == map or type-of( $map1 ) == list ) and ( type-of( $map2 ) == map or type-of( $map2 ) == list ) ) {
+		$result: $map1;
+
+		@each $key, $value in $map2 {
+			@if ( type-of( map-get( $result, $key ) ) == map and type-of( $value ) == map) {
+				$result: map-merge( $result, ( $key: _b__map-merge-recursive( map-get( $result, $key ), $value ) ) );
+			}
+
+			@else {
+				$result: map-merge( $result, ( $key: $value ) );
+			}
+		}
+
+		@return $result;
+	}
+
+	@else {
+		@warn '_b__map-merge-recursive() expects it\'s parameters to be map types!';
+
+		@return null;
+	}
+}

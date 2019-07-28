@@ -1,0 +1,25 @@
+{
+  "name": "@nirbos/bellerophon",
+  "version": "0.0.1",
+  "description": "A salmagundi :books: containing of sass helpers, functions, mixins and other sass related stuff.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nirbos/Bellerophon.git"
+  },
+  "keywords": [
+    "scss",
+    "css",
+    "_b",
+    "helper"
+  ],
+  "author": "Robin Giesler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nirbos/Bellerophon/issues"
+  },
+  "homepage": "https://github.com/nirbos/Bellerophon#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

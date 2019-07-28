@@ -1,0 +1,14 @@
+@charset 'UTF-8';
+
+@mixin _b__reset-button(  ) {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: none;
+	display: inline-block;
+	overflow: visible;
+	font: inherit;
+	color: inherit;
+	line-height: normal;
+}

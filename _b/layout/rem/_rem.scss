@@ -1,0 +1,14 @@
+@charset 'UTF-8';
+
+// Based on em-function
+
+@function _b__rem( $pixels, $context: _b__get-setting( 'rem-browser-context' ) ) {
+	@if ( unitless( $pixels ) ) {
+		$pixels: $pixels * 1px;
+	}
+	@if ( unitless( $context) ) {
+		$context: $context * 1px;
+	}
+
+	@return $pixels / $context * 1rem;
+}

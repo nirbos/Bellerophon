@@ -1,0 +1,10 @@
+@charset 'UTF-8';
+
+@mixin _b__event-state--interaction() {
+
+	&:hover,
+	&:focus,
+	&:active {
+		@content;
+	}
+}

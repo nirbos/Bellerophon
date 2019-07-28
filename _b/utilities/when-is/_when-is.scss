@@ -1,0 +1,14 @@
+@charset 'UTF-8';
+
+/*
+@author: Hugo Giraudel
+@link https://css-tricks.com/snippets/sass/mixin-to-qualify-a-selector/
+@license: CSS Tricks License
+@license-file: LICENSE
+*/
+
+@mixin _b__when-is( $element-selector ) {
+	@at-root #{$element-selector + &} {
+		@content;
+	}
+}

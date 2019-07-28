@@ -1,0 +1,8 @@
+@charset 'UTF-8';
+
+@function _b__set-setting( $setting ) {
+
+	$_b__settings--default: _b__map-merge-recursive( $_b__settings--default, $setting ) !global;
+
+	@return $_b__settings--default;
+}

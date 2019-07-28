@@ -1,0 +1,11 @@
+@charset 'UTF-8';
+
+@function _b__color-transparency ( $color: null, $transparency-value: 1 ) {
+	@if $color == null {
+		@warn 'No color given, returning transparent';
+
+		@return transparent;
+	}
+
+	@return rgba( $color, $transparency-value );
+}

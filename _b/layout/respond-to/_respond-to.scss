@@ -1,0 +1,24 @@
+@charset 'UTF-8';
+
+/*
+@author: Hugo Giraudel
+@link https://css-tricks.com/snippets/sass/mixin-manage-breakpoints/
+@license: CSS Tricks License
+@license-file: LICENSE
+*/
+
+@mixin respond-to( $breakpoint ) {
+
+	$breakpoint-settings: _b__get-setting( 'breakpoints' );
+
+	@if map-has-key($breakpoint-settings, $breakpoint) {
+		// Prints a media query based on the value
+		@media #{inspect( unquote( map-get( $breakpoint-settings, $breakpoint ) ) )} {
+			@content;
+		}
+	}
+
+	@else {
+		@warn 'Unfortunately, no value could be retrieved from `#{$breakpoint}`. ' + 'Available breakpoints are: #{map-keys($breakpoint-settings)}.';
+	}
+}

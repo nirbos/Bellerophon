@@ -1,0 +1,12 @@
+@charset 'UTF-8';
+
+/*
+@author: Tyson Gach
+@link https://github.com/thoughtbot/bourbon/blob/master/core/bourbon/utilities/_fetch-bourbon-setting.scss
+@license: MIT
+@license-file: LICENSE
+*/
+
+@function _b__get-setting( $setting ) {
+	@return map-get( _b__map-merge-recursive( $_b__settings--default, $_b ), $setting );
+}

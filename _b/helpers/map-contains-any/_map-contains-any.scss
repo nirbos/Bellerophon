@@ -1,0 +1,18 @@
+@charset 'UTF-8';
+
+/*
+@author: Chris Eppstein
+@link: https://github.com/Compass/compass/blob/stable/core/stylesheets/compass/utilities/sass/_maps.scss
+@license: MIT
+@license-file: LICENSE
+*/
+
+@function _b__map-contains-any( $map, $sub-map ) {
+	@each $key, $value in $sub-map {
+		@if map-has-key( $map, $key ) and map-get( $map, $key ) == $value {
+			@return true;
+		}
+	}
+
+	@return false;
+}

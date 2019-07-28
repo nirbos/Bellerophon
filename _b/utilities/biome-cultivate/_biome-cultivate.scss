@@ -1,0 +1,21 @@
+@charset 'UTF-8';
+
+$_b__biome: (  ) !default;
+
+@mixin _b__biome-cultivate( $elementOrMap, $parent: null ) {
+	@if ( type-of( $elementOrMap ) != 'map' ) {
+		$elementOrMap: ( $elementOrMap: () );
+	}
+	@if ( $parent == null ) {
+		$_b__biome: _b__map-merge-recursive( $_b__biome, $elementOrMap ) !global;
+	}
+
+	@else {
+		$parent-map: map-get( $_b__biome, $parent );
+
+		$elementOrMap: ( $parent: ( $elementOrMap ) );
+		$_b__biome: _b__map-extend( $_b__biome, $elementOrMap, true ) !global;
+	}
+
+	$_b__settings--default: _b__set-setting( ( 'biome': $_b__biome ) );
+}

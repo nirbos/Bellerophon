@@ -1,0 +1,11 @@
+@charset 'UTF-8';
+
+@mixin _b__biome-viable( $name ) {
+	@if ( _b__map-has-nested-keys( _b__get-setting( 'biome' ), $name ) ) {
+		@content;
+	}
+
+	@else {
+		@debug 'Biome "#{$name}" is not viable. Skipping.';
+	}
+}

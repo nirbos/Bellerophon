@@ -1,0 +1,5 @@
+@charset 'UTF-8';
+
+@mixin _b__reset-opacity( $opacity: 1 ) {
+	opacity: $opacity;
+}

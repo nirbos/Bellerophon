@@ -1,0 +1,8 @@
+@charset 'UTF-8';
+
+@function _b__biome-community( $biome, $components... ) {
+
+	$map: _b__map-deep-get( _b__get-setting( 'biome' ), $biome, $components... );
+
+	@return $map;
+}

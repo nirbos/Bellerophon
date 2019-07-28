@@ -1,0 +1,19 @@
+@charset 'UTF-8';
+
+/*
+@author: Hugo Giraudel
+@link: https://www.sitepoint.com/extra-map-functions-sass/
+@license: MIT
+@license-file: LICENSE
+*/
+
+@function _b__map-has-nested-keys( $map, $keys... ) {
+	@each $key in $keys {
+		@if not map-has-key( $map, $key ) {
+			@return false;
+		}
+		$map: map-get( $map, $key );
+	}
+
+	@return true;
+}

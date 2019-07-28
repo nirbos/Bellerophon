@@ -1,0 +1,15 @@
+@charset 'UTF-8';
+
+/*
+@author: Hugo Giraudel
+@link: https://css-tricks.com/snippets/sass/simplifying-contexts-events/
+@license: CSS Tricks License
+@license-file: LICENSE
+*/
+
+@mixin _b__when-inside( $context ) {
+
+	#{$context} & {
+		@content;
+	}
+}

@@ -1,0 +1,12 @@
+@charset 'UTF-8';
+
+/*
+@author: Stephen Tudor
+@link: https://github.com/Igosuki/compass-mixins/blob/master/lib/compass/functions/_colors.scss
+@license: MIT
+@license-file: LICENSE
+*/
+
+@function _b__adjust-saturation( $color, $amount ) {
+	@return adjust-color( $color, $saturation: $amount );
+}

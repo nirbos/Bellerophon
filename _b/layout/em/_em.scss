@@ -1,0 +1,19 @@
+@charset 'UTF-8';
+
+/*
+@author: Chris Coyier
+@link https://css-tricks.com/snippets/sass/px-to-em-functions/
+@license: CSS Tricks License
+@license-file: LICENSE
+*/
+
+@function _b__em( $pixels, $context: _b__get-setting( 'em-browser-context' ) ) {
+	@if ( unitless( $pixels ) ) {
+		$pixels: $pixels * 1px;
+	}
+	@if ( unitless( $context) ) {
+		$context: $context * 1px;
+	}
+
+	@return $pixels / $context * 1em;
+}
