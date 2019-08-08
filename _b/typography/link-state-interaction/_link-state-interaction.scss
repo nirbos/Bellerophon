@@ -1,0 +1,10 @@
+@charset 'UTF-8';
+
+@mixin _b__link-state-interaction() {
+
+	&:hover,
+	&:focus,
+	&:active {
+		@content;
+	}
+}
