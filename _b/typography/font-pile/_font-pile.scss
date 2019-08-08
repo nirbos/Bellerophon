@@ -1,0 +1,17 @@
+@charset 'UTF-8';
+
+@mixin _b__font-pile( $name ){
+
+    $fontpile-settings: _b__get-setting( 'font-pile' );
+
+    @if map-has-key($fontpile-settings, $name) {
+        
+        font-family: unquote( map-get( $fontpile-settings, $name ) );
+
+    }
+
+	@else {
+		@warn 'Unfortunately, no value could be retrieved from `#{$name}`. ' + 'Available font-piles are: #{map-keys($fontpile-settings)}.';
+	}
+    
+}
