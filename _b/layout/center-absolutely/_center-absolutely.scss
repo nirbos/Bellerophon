@@ -1,0 +1,25 @@
+@charset 'UTF-8';
+
+/*
+@author: David Clark
+@link https://github.com/davidtheclark/scut/blob/master/src/layout/_center-absolutely.scss
+@license: MIT
+@license-file: LICENSE
+*/
+
+@mixin _b__center-absolutely ( $dimensions ) {
+	$width: nth( $dimensions, 1 );
+	$height: nth( $dimensions, 2 );
+	position: absolute;
+
+	@if $width != n {
+		width: $width;
+		left: 50%;
+		margin-left: ( -$width / 2 );
+	}
+	@if $height != n {
+		height: $height;
+		top: 50%;
+		margin-top: ( -$height / 2 );
+	}
+}
