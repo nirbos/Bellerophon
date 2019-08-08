@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+/*
+@author: David Clark
+@link ttps://github.com/davidtheclark/scut/blob/master/src/typography/_hanging-indent.scss
+@license: MIT
+@license-file: LICENSE
+*/
+
+@mixin _b__hanging-indent ( $indent: 1em ) {
+	padding-left: $indent;
+	text-indent: -$indent;
+}
