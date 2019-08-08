@@ -1,7 +1,7 @@
-@mixin _b__element-height-em( $height: 0 ) {
+@mixin _b__height-rem( $height: 0 ) {
 	@if unitless( $height ) {
 		$height: $height * 1px;
 	}
 	height: $height;
-	height: _b__em( $height );
+	height: _b__rem( $height );
 }
