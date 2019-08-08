@@ -1,0 +1,46 @@
+@charset 'UTF-8';
+
+/*
+@author: David Clark
+@link https://github.com/davidtheclark/scut/blob/master/src/layout/_center-transform.scss
+@license: MIT
+@license-file: LICENSE
+*/
+
+@mixin _b__center-transform ( $axis: false ) {
+	position: absolute;
+
+	@if $axis != x {
+		top: 50%;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	@if $axis != y {
+		left: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	$translate-val: null;
+
+	@if not( $axis ) {
+		$translate-val: translate( -50%, -50% );
+	}
+
+	@else if $axis != x {
+		$translate-val: translateY( -50% );
+	}
+	@else if $axis != y {
+		$translate-val: translateX( -50% );
+	}
+
+	transform: $translate-val;
+}
+
+@mixin _b__center-transform-x {
+	@include _b__center-transform( x );
+}
+
+@mixin _b__center-transform-y {
+	@include _b__center-transform( y );
+}
