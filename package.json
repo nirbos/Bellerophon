@@ -1,6 +1,6 @@
 {
   "name": "@nirbos/bellerophon",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A salmagundi :books: containing of sass helpers, functions, mixins and other sass related stuff.",
   "main": "index.js",
   "repository": {
