@@ -1,0 +1,33 @@
+@charset 'UTF-8';
+
+/*
+// Based on
+@author: Chris Eppstein
+@link: https://github.com/Igosuki/compass-mixins/blob/master/lib/compass/utilities/general/_float.scss
+@license: MIT
+@license-file: LICENSE
+*/
+
+@mixin _b__float-left{
+    @include _b__float( 'left' );
+}
+
+@mixin _b__float-right{
+    @include _b__float( 'right' );
+}
+
+@mixin _b__float-inline-start{
+    @include _b__float( 'inline-start' );
+}
+
+@mixin _b__float-inline-end{
+    @include _b__float( 'inline-end' );
+}
+
+@mixin _b__float-none {
+    @include _b__reset-float;
+}
+
+@mixin _b__float( $side: left ){
+    float: unquote( $side );
+}
