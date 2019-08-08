@@ -1,0 +1,14 @@
+@charset 'UTF-8';
+
+/*
+@author: Tyson Gach
+@link https://github.com/thoughtbot/bourbon/blob/master/core/bourbon/library/_hide-text.scss
+@license: MIT
+@license-file: LICENSE
+*/
+
+@mixin _b__hide-text {
+	overflow: hidden;
+	text-indent: 101%;
+	white-space: nowrap;
+}
