@@ -1,14 +1,4 @@
 @mixin _b__size-em( $width: 0, $height: 0 ) {
-  @if unitless( $width ) {
-    $width: $width * 1px;
-  }
-
-  @if unitless( $height ) {
-    $height: $height * 1px;
-  }
-
-  width: $width;
-  width: _b__em( $width );
-  height: $height;
-  height: _b__em( $height );
+  @include _b__width-em( $width );
+  @include _b__height-em( $height );
 }
