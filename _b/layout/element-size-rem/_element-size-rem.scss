@@ -1,0 +1,14 @@
+@mixin _b__element-size-rem( $width: 0, $height: 0 ) {
+    @if unitless( $width ) {
+        $width: $width * 1px;
+    }
+
+    @if unitless( $height ) {
+        $height: $height * 1px;
+    }
+
+    width: $width;
+    width: _b__rem( $width );
+    height: $height;
+    height: _b__rem( $height );
+}
