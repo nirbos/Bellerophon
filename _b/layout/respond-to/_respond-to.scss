@@ -7,7 +7,7 @@
 @license-file: LICENSE
 */
 
-@mixin respond-to( $breakpoint ) {
+@mixin _b__respond-to( $breakpoint ) {
 
 	$breakpoint-settings: _b__get-setting( 'breakpoints' );
 
