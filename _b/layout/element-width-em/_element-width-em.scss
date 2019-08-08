@@ -1,0 +1,7 @@
+@mixin _b__element-width-em( $width: 0 ) {
+	@if unitless( $width ) {
+		$width: $width * 1px;
+	}
+	width: $width;
+	width: _b__em( $width );
+}
