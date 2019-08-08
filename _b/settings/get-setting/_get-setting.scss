@@ -8,5 +8,5 @@
 */
 
 @function _b__get-setting( $setting ) {
-	@return map-get( _b__map-merge-recursive( $_b__settings--default, $_b ), $setting );
+	@return map-get( _b__map-merge-recursive( $_b__settings-default, $_b ), $setting );
 }

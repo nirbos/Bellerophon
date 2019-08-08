@@ -1,7 +1,6 @@
 @charset 'UTF-8';
 
-@import 'typography/text-overflow/text-overflow--clip/_text-overflow--clip.scss';
-@import 'typography/text-overflow/text-overflow--ellipsis/_text-overflow--ellipsis.scss';
-
-@import 'typography/font-size/font-size--em/_font-size--em.scss';
-@import 'typography/font-size/font-size--rem/_font-size--rem.scss';
+@import 'typography/font-size-em/_font-size-em.scss';
+@import 'typography/font-size-rem/_font-size-rem.scss';
+@import 'typography/text-overflow-clip/_text-overflow-clip.scss';
+@import 'typography/text-overflow-ellipsis/_text-overflow-ellipsis.scss';
