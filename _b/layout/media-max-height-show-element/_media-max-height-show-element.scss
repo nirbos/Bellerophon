@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+@mixin _b__media-max-height-show-element( $height, $display: initial ){
+
+    @media (max-height: #{$height}){
+        & {
+            @content;
+            display: $display !important;
+        }
+        
+    }
+
+}

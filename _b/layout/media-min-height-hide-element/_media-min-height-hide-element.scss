@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+@mixin _b__media-min-height-hide-element( $height ){
+
+    @media (min-height: #{$height}){
+        & {
+            @content;
+            display: none !important;
+        }
+        
+    }
+
+}
