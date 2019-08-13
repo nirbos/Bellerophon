@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+@mixin _b__media-max-device-width-hide-element( $width ){
+
+    @media (max-device-width: #{$width}){
+        & {
+            @content;
+            display: none !important;
+        }
+        
+    }
+
+}

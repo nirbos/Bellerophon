@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+@mixin _b__media-min-device-width-show-element( $width, $display: initial ){
+
+    @media (min-device-width: #{$width}){
+        & {
+            @content;
+            display: $display !important;
+        }
+        
+    }
+
+}
