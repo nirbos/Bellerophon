@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+@mixin _b__media-max-width-show-element( $width, $display: initial ){
+
+    @media (max-width: #{$width}){
+        & {
+            @content;
+            display: $display !important;
+        }
+        
+    }
+
+}

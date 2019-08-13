@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+@mixin _b__media-min-width-hide-element( $width ){
+
+    @media (min-width: #{$width}){
+        & {
+            @content;
+            display: none !important;
+        }
+        
+    }
+
+}

@@ -1,0 +1,9 @@
+@charset 'UTF-8';
+
+@mixin _b__media-max-width( $width ){
+
+    @media (max-width: #{$width}){
+        @content;
+    }
+
+}
