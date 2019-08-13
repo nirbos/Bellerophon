@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+@mixin _b__media-orientation-landscape-show-element( $display: initial ){
+
+    @media (orientation: landscape){
+        & {
+            @content;
+            display: $display !important;
+        }
+        
+    }
+
+}

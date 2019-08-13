@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+@mixin _b__media-orientation-landscape-hide-element(){
+
+    @media (orientation: landscape){
+        & {
+            @content;
+            display: none !important;
+        }
+        
+    }
+
+}

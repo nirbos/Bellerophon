@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+@mixin _b__media-orientation-portrait-show-element( $display: initial ){
+
+    @media (orientation: portrait){
+        & {
+            @content;
+            display: $display !important;
+        }
+        
+    }
+
+}
