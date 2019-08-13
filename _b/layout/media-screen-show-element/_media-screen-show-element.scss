@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+@mixin _b__media-screen-show-element( $display: initial ){
+
+    @media screen{
+        & {
+            @content;
+            display: $display !important;
+        }
+        
+    }
+
+}

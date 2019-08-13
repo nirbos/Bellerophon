@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+@mixin _b__media-print-hide-element(){
+
+    @media print{
+        & {
+            @content;
+            display: none !important;
+        }
+        
+    }
+
+}
