@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+@mixin _b__media-device-height-hide-element( $height ){
+
+    @media (device-height: #{$height}){
+        & {
+            @content;
+            display: none !important;
+        }
+        
+    }
+
+}

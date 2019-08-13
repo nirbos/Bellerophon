@@ -1,0 +1,9 @@
+@charset 'UTF-8';
+
+@mixin _b__media-max-device-height( $height ){
+
+    @media (max-device-height: #{$height}){
+        @content;
+    }
+
+}
