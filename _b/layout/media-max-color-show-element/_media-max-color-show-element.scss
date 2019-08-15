@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+@mixin _b__media-max-color-show-element( $color, $display: initial ){
+
+    @media (max-color: #{$color}){
+        & {
+            @content;
+            display: $display !important;
+        }
+        
+    }
+
+}
