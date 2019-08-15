@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+@mixin _b__media-max-color-indexhide-element( $color ){
+
+    @media (max-color-index: #{$color}){
+        & {
+            @content;
+            display: none !important;
+        }
+        
+    }
+
+}

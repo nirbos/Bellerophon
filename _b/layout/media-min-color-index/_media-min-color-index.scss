@@ -1,0 +1,9 @@
+@charset 'UTF-8';
+
+@mixin _b__media-min-color-index( $color ){
+
+    @media (min-color-index: #{$color}){
+        @content;
+    }
+
+}

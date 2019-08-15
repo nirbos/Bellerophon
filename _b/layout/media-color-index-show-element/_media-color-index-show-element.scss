@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+@mixin _b__media-color-index-show-element( $color, $display: initial ){
+
+    @media (color-index: #{$color}){
+        & {
+            @content;
+            display: $display !important;
+        }
+        
+    }
+
+}

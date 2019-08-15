@@ -1,0 +1,9 @@
+@charset 'UTF-8';
+
+@mixin _b__media-max-color-index( $color ){
+
+    @media (max-color-index: #{$color}){
+        @content;
+    }
+
+}
