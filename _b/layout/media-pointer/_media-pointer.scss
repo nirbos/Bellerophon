@@ -1,0 +1,9 @@
+@charset 'UTF-8';
+
+@mixin _b__media-pointer( $pointer ){
+
+    @media (pointer: #{$pointer}){
+        @content;
+    }
+
+}

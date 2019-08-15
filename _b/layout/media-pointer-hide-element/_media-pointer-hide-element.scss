@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+@mixin _b__media-pointer-hide-element( $pointer ){
+
+    @media (pointer: #{$pointer}){
+        & {
+            @content;
+            display: none !important;
+        }
+        
+    }
+
+}

@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+@mixin _b__media-pointer-show-element( $pointer, $display: initial ){
+
+    @media (pointer: #{$pointer}){
+        & {
+            @content;
+            display: $display !important;
+        }
+        
+    }
+
+}
