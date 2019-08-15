@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+@mixin _b__media-max-monochrome-show-element( $monochrome, $display: initial ){
+
+    @media (max-monochrome: #{$monochrome}){
+        & {
+            @content;
+            display: $display !important;
+        }
+        
+    }
+
+}

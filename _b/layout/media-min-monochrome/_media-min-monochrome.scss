@@ -1,0 +1,9 @@
+@charset 'UTF-8';
+
+@mixin _b__media-min-monochrome( $monochrome ){
+
+    @media (min-monochrome: #{$monochrome}){
+        @content;
+    }
+
+}
