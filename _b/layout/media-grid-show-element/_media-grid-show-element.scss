@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+@mixin _b__media-grid-show-element( $grid, $display: initial ){
+
+    @media (grid: #{$grid}){
+        & {
+            @content;
+            display: $display !important;
+        }
+        
+    }
+
+}
