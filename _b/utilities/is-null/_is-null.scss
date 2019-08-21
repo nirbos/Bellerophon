@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@function _b__is-null( $variable ){
+
+    @if (_b__is( $variable ) == "null"){
+
+        @return true;
+
+    }
+
+    @return false;
+
+}

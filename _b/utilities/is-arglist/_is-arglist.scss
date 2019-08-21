@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@function _b__is-arglist( $variable ){
+
+    @if (_b__is( $variable ) == "arglist"){
+
+        @return true;
+
+    }
+
+    @return false;
+
+}

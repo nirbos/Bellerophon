@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+@function _b__is( $variable ){
+
+    @return type-of( $variable );
+
+}

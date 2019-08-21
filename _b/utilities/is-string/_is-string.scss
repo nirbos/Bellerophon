@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@function _b__is-string( $variable ){
+
+    @if (_b__is( $variable ) == "string"){
+
+        @return true;
+
+    }
+
+    @return false;
+
+}

@@ -4,10 +4,18 @@
 @import 'utilities/event-state/event-state--all/_event-state--all.scss';
 @import 'utilities/event-state/event-state--interaction/_event-state--interaction.scss';
 @import 'utilities/event-state/event-state--used/_event-state--used.scss';
-
 @import 'utilities/when-inside/_when-inside.scss';
 @import 'utilities/when-is/_when-is.scss';
-
 @import 'utilities/biome-cultivate/_biome-cultivate.scss';
 @import 'utilities/biome-viable/_biome-viable.scss';
 @import 'utilities/biome-community/_biome-community.scss';
+@import 'utilities/is/_is.scss';
+@import 'utilities/is-arglist/_is-arglist.scss';
+@import 'utilities/is-bool/_is-bool.scss';
+@import 'utilities/is-color/_is-color.scss';
+@import 'utilities/is-function/_is-function.scss';
+@import 'utilities/is-list/_is-list.scss';
+@import 'utilities/is-map/_is-map.scss';
+@import 'utilities/is-null/_is-null.scss';
+@import 'utilities/is-number/_is-number.scss';
+@import 'utilities/is-string/_is-string.scss';
