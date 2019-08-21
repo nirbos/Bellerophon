@@ -1,0 +1,9 @@
+@charset 'UTF-8';
+
+@mixin _b__media-resolution( $resolution ){
+
+    @media (resolution: #{$resolution}){
+        @content;
+    }
+
+}

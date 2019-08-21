@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+@mixin _b__media-min-resolution-show-element( $resolution, $display: initial ){
+
+    @media (min-resolution: #{$resolution}){
+        & {
+            @content;
+            display: $display !important;
+        }
+        
+    }
+
+}

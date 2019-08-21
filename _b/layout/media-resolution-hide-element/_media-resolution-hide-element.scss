@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+@mixin _b__media-resolution-hide-element( $resolution ){
+
+    @media (resolution: #{$resolution}){
+        & {
+            @content;
+            display: none !important;
+        }
+        
+    }
+
+}
