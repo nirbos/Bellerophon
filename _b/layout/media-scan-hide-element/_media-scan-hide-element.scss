@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+@mixin _b__media-scan-hide-element( $scan ){
+
+    @media (scan: #{$scan}){
+        & {
+            @content;
+            display: none !important;
+        }
+        
+    }
+
+}

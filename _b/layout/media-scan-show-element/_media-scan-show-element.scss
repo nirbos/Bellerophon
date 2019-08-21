@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+@mixin _b__media-scan-show-element( $scan, $display: initial ){
+
+    @media (scan: #{$scan}){
+        & {
+            @content;
+            display: $display !important;
+        }
+        
+    }
+
+}
