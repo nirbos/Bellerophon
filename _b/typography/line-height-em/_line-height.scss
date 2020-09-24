@@ -1,8 +1,8 @@
 @charset 'UTF-8';
 
 @mixin _b__line-height-em( $pixel ){
-	@if ( unitless( $pixels ) ) {
-		$pixels: $pixels * 1px;
+	@if (unitless( $pixel )) {
+		$pixels: $pixel * 1px;
 	}
 
     line-height: $pixel;
